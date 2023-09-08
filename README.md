@@ -1,6 +1,6 @@
 # Microsserviço de Catálogo de Vídeos - Parte I
 
-O microsserviço de Catálogo de Vídeos é a aplicação backend responsável por disponibilizar uma série de _APIs_ para a navegação e _playback_ dos vídeos.
+O microsserviço de Catálogo de Vídeos é a aplicação _backend_ responsável por disponibilizar uma série de _APIs_ para a navegação e _playback_ dos vídeos.
 
 A aplicação é um _Backend For Frontend_ (_BFF_), devendo trazer dados específicos de acordo com o tipo de _frontend_ que se conectar nela. Nesse sentido, faz uso do _GraphQL_, através do suporte que o _Spring_ oferece a essa tecnologia de linguagem de consultas.
 
