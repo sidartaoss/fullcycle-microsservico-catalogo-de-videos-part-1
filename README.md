@@ -12,8 +12,8 @@ E como é feito a replicação? A replicação acontece com o _Kafka Connect_.
 
 Assim, dentro da dinâmica do sistema:
 
-1. O _Kafka Connect_ observa o _MySQL_: para todas as atualizações no _Admin_ do Catálogo de Vídeos, o _Kafka Connect_ recebe e envia para o _Kafka_;
-2. A _API_ do Catálogo de Vídeos é, então, notificada pelo _Kafka_ e faz um _Get_ no _Admin_ do Catálogo de Vídeos para obter o recurso e, a partir de então, indexá-lo junto ao _Elasticsearch_.
+1. O _Kafka Connect_ atua sobre o processo de _Change Data Capture_ (_CDC_), ou seja, para todas as atualizações na base de dados _MySQL_ da aplicação _Admin_ do Catálogo de Vídeos, o _Kafka Connect_ irá receber e propagá-las para o _Kafka_;
+2. A _API_ do Catálogo de Vídeos será, então, notificada pelo _Kafka_ e fará um _Get_ na aplicação _Admin_ do Catálogo de Vídeos para obter o recurso e, a partir de então, indexá-lo junto ao _Elasticsearch_.
 
 Estão envolvidas, nesta aplicação, tecnologias de:
 
